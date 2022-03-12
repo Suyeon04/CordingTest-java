@@ -1,0 +1,20 @@
+package CosPro1;
+
+public class atoi {
+	class Solution {
+	    public int solution(char s) {
+	        int answer = 0;
+	        char a[] = s.split("");
+	        int x = 0;
+	        for(int i = a.length(); i!=0; i/=10){
+	            answer += 
+	        }
+	            return Integer.parseInt(s);
+	    }
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

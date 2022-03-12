@@ -1,0 +1,52 @@
+package CosPro1;
+
+public class ºó°ø°£Ã£±â {
+	    public String[] solution(int n, int[] arr1, int[] arr2) {
+	        String[] answer = new String[n];
+	        for(int i = 0; i<n; i++){
+	            answer[i]= "";
+	        }
+	        for(int i = 0; i<n; i++){
+	            int x = (int)Math.pow(2,n);
+	            int y = n-1;
+	           while(x>2){
+	               x/=2;
+	               System.out.print(x+ " ");
+	               if(x<=arr1[i]||x<=arr2[i]){
+	                   answer[i] += "#";
+	                   if(x<=arr1[i])
+	                       arr1[i]-=x;
+	                    if(x<=arr2[i])
+	                       arr2[i]-=x; 
+	               }else{
+	                   answer[i] += " ";
+	               }
+	               y--; 
+	           }
+	        }
+	         for(int i = 0; i<n; i++){
+	            if(arr1[i] % 2 !=0 || arr2[i] % 2 !=0){
+	                answer[i] += "#";
+	                if(arr1[i] % 2 !=0){
+	                    arr1[i]--;
+	                }if(arr2[i]%2!=0)
+	                    arr2[i]--;
+	            }else{
+	                answer[i] += " ";
+	            }
+	        }
+	        return answer;
+	    }
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ºó°ø°£Ã£±â a = new ºó°ø°£Ã£±â();
+		int x[] = {30, 1, 21, 17, 28};
+		int y[] = {9, 20, 28, 18, 11};
+		String nn[] = a.solution(5,x,y);
+		for(int i = 0; i<5; i++) {
+			System.out.println(nn[i]);
+		}
+		
+	}
+
+}

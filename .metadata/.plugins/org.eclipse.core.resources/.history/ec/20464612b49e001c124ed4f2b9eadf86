@@ -1,0 +1,30 @@
+package CosPro1;
+
+public class Áø¼ö {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int a = 77;
+		int i = 2;
+		int answer = 0;
+		int x = 1;
+		for(i = 1; a>=i;i*=2) {
+			x*=10;
+		}
+		i/=2;
+		x/=10;
+		if(a%2==1) {
+			answer++;
+			a--;
+		}
+		for(int j = i; j!=0; j/=2) {
+			if(a>j) {
+				System.out.println(x);
+				answer += x;
+				a %= j;
+				
+			}
+			x/=10;
+		}
+	}
+}

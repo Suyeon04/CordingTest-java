@@ -1,0 +1,10 @@
+package CosPro1;
+
+public class atoi {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,13 @@
+package CosPro1;
+
+public class Áø¼ö {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int a = 77;
+		int i = 2;
+		for(i = 1; a>i;i*=2) {
+		}
+		System.out.println(i);
+	}
+}
